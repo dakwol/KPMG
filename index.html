@@ -1,0 +1,656 @@
+<?php
+	session_start();
+	if (empty($_SESSION['gt'])){
+		$_SESSION['gt'] = bin2hex(random_bytes(32));
+	}
+	$gt = $_SESSION['gt'];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name=»viewport» content=»width=device-width, initial-scale=1.0”>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>KPMG</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="logo">
+                        <img src="assets/images/logo2.png" class="header__logo">
+                    </div>
+
+                    <nav class="cd-main-nav-wrapper">
+                        <ul class="cd-main-nav">
+
+                            <li><a href="#" class="nav__link">Teenused</a></li>
+                            <li><a href="#" class="nav__link">Meist</a></li>
+                            <li><a href="#" class="nav__link">Paketid</a></li>
+                            <li><a href="#" class="nav__link">Uudised</a></li>
+                            <li><a href="#" class="nav__link">Koolitused</a></li>
+                            <li><a href="#" class="nav__btn">Võta ühendust</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#0" class="cd-nav-trigger">.<span></span></a>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <main  class="main" style='overflow-x:hidden;'>
+            <div class="cd-main-content">
+            <!--Block 1-->
+
+            <div class="intro">
+                <div class="video-wrapper">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                    </div>
+                <div class="container">
+
+                    <div class="intro__inner">
+
+                        <div class="intro__content">
+
+                            <h2 class="intro__subtitle">Lorem ipsum dolor sit amet</h2>
+                            <h1 class="intro__title">Nüüdisajal on iga äri<br>digitaalne äri.</h1>
+
+                            <img src="assets/images/rect.png" class="rectangle">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Block 2-->
+            <section class="section">
+                <div class="container">
+                    <div class="section__content">
+                        <h1 class="section__title" data-aos="fade-up">Küberturvalisuse tegevussuunad</h1>
+                        <div class="section__card">
+                            <a href="#" class="card__ref">
+                             <div class="card__item" data-aos="fade-up">
+                                    <img class="card__logo" src="assets/images/card_logo11.png">
+                                    <div class="card__title">Planeerimine ja nõustamine</div>
+                                    <div class="card__text">It is a long established fact that a reader<br> will be distracted by the readable content<br> of a page when looking at its layout.</div>
+                                </div>
+                            </a>
+                            <a href="#" class="card__ref">
+                            <div class="card__item" data-aos="fade-up">
+                                <img class="card__logo" src="assets/images/card_logo22.png">
+                                <div class="card__title">Tehniline testimine</div>
+                                <div class="card__text">It is a long established fact that a reader<br> will be distracted by the readable content<br> of a page when looking at its layout.</div>
+                            </div>
+                            </a>
+                            <a href="#" class="card__ref">
+                            <div class="card__item" data-aos="fade-up">
+                                <img class="card__logo" src="assets/images/card_logo33.png">
+                                <div class="card__title">Koolitused</div>
+                                <div class="card__text">It is a long established fact that a reader<br> will be distracted by the readable content<br> of a page when looking at its layout.</div>
+                            </div>
+                            </a>
+                            <img src="assets/images/rect.png" class="rectangle__two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Block 3-->
+            <section class="section">
+                <div class="containe">
+                    <div class="section__conten">
+                        <div class="section__inner" data-aos="fade-left">
+                            <img src="assets/images/rect22.png" class="rectangle__thr">
+                            <div class="sect__in">
+                                <h1 class="diagram__title">Planeerimine ja nõustamine</h1>
+                                <h2 class="diagram__subtitle">CMA - Cyber Security Maturity Assessment</h2>
+                                <div class="sect__element">
+                                    <div class="section__nav">
+                                        <a href="#" class="navigations">Ülevaade</a>
+                                        <a href="#" class="navigations">Üldhinnang</a>
+                                        <a href="#" class="navigations">Kategooriad</a>
+                                        <div class="nav__text">KPMG infoturbe küpsustaseme hindamine annab ulatusliku ülevaate, milline on infovarade kaitsmise ja küberohtudele reageerimise võimekus (sh. pööratakse tähelepanu töötajatele, tehnoloogiatele, protsessidele).<br><br>  Ettevõtte võtmeisikute ning KPMG spetsialistide vahel teostatud intervjuu kestusega 60 minutit.<br>  KPMG infoturbe küpsustaseme hindamise metoodika (põhineb üldtunnustatud standarditel ja praktikatel – nt ISO/IEC 27000 seeria standardid, CCS CSC, COBIT 5, ISKE).</div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="diagramm__item">
+                                    <div class="diagramm__categor">
+                                        <div class="categor__one">puudustega</div>
+                                        <div class="categor__two">rahuldav</div>
+                                        <div class="categor__thr">hea</div>
+                                        <div class="categor__for">väga hea</div>
+                                    </div>
+                                <div class="diagramm">
+                                    <div class="skillBlock">
+                                        <div class="column">
+                                            <span class="name">Planeerimine</span>
+                                            <span>53%</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="skillBlock">
+                                        <div class="column">
+                                            <span class="name">Kaitsmine</span>
+                                            <span>53%</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="skillBlock">
+                                        <div class="column">
+                                            <span class="name">Avastamine</span>
+                                            <span>72%</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="skillBlock">
+                                        <div class="column">
+                                            <span class="name">Taastamine</span>
+                                            <span>84%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="diagramm__footer">Näide: infoturbe küpsustaseme hindamine</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Block 4-->
+            <section class="section__for" data-aos="fade-up">
+                <div class="container">
+                    <div class="sectionFor__content">
+                        <div class="sectFor__text">
+                            <img src="assets/images/rect3.png" class="rectangle__for">
+                            <h1 class="sectFor__title">Tehniline Testimine</h1>
+                            <div class="sectFor__subtext">KPMG Cyber pakub kriitiliste küberturvalisuse riskide maandamiseks erinevaid <br>vajaduspõhiseid teenuseid (nt digitaalse jalajälje kaardistamine, veebirakenduste ja võrgu <br>läbistustestid, õngituskampaaniad). Tulenevalt kliendi vajadustest, pakume ka erilahendusi <br>ja integreeritud tuge (nt küberturvalisuse teenused kombineeritud õigusteenustega – sh <br>kliendi esindamine kohtus).</div>
+                        </div>
+                        <div class="elements__tabl">
+                        <div class="sectFor__element">
+                            <img src="assets/images/Tehn__logo.png" class="sectFor__logo"></img>
+                            <div class="element__title">Digitaalne jalajälg</div>
+                            <div class="element__text">Võrgu läbistustestide läbiviimine aitab mõista, kas kliendiandmed on täna kaitstud ja <br>kas müügiartiklid, hinnastamine ning nendega seotud andmebaasid on piisaval <br>määral turvatud. Andmelekked on kõige suurimat kahju tekitavad küberintsidendid. <br>Sobib ettevõtetele, kes tahavad vältida andmeriskidest tulenevaid kahjusid või <br>näiteks laieneda välisriikidesse ning vajavad enne investeeringu pälvimist <br>kindlustunnet.</div>
+                        </div>
+                        <div class="sectFor__element">
+                            <img src="assets/images/Tehn__logo2.png" class="sectFor__logo"></img>
+                            <div class="element__title">Veebirakenduste läbistustestid</div>
+                            <div class="element__text">Suur osa ettevõtteid osutavad oma teenuseid täna läbi digitaalsete kanalite (äpid, <br>veebirakendused, portaalid). Teenus aitab ettevõttel mõista riske seoses võimalike <br>küberrünnakutega – mis juhtuks kui veebirakendust tabaks küberrünnak. <br>Läbistustest aitab tuvastada, kas tundlikud andmed (kasutajte sisselogimise andmed, <br>krediitkaardi andmed) võivad olla ligipääsetavad välistele osapooltele. Sobib <br>ettevõtetele, kelle äri on enamuses digitaalne</div>
+                        </div>
+
+                    </div>
+                    <div class="elements__tabl">
+                        <div class="sectFor__element">
+                            <img src="assets/images/Tehn__logo3.png" class="sectFor__logo"></img>
+                            <div class="element__title">Õngitsus-kampaaniad</div>
+                            <div class="element__text">Iga süsteemi nõrgim osa on inimene. Suur osa küberturvalisuse intsidentidest saab <br>alguse töötajate hooletusest või teadmiste vähesusest. Õngitsuskampaania käigus <br>lepime kliendiga kokku segmendi, kelle teadmisi kampaania käigus soovitakse <br>kontrollida ja parandada. Sobib ettevõttele, kus on asutud tõstma töötajate <br>teadmiste taset seoses muutunud äriprotsessidega (nt teenuse osutamine <br>digitaalsetes kanalites).</div>
+                        </div>
+                        <div class="sectFor__element">
+                            <img src="assets/images/Tehn__logo4.png" class="sectFor__logo"></img>
+                            <div class="element__title">Võrgu läbistustestid</div>
+                            <div class="element__text">Võrgu läbistustestide läbiviimine aitab mõista, kas kliendiandmed on täna kaitstud ja <br>kas müügiartiklid, hinnastamine ning nendega seotud andmebaasid on piisaval <br>määral turvatud. Andmelekked on kõige suurimat kahju tekitavad küberintsidendid. <br>Sobib ettevõtetele, kes tahavad vältida andmeriskidest tulenevaid kahjusid või <br>näiteks laieneda välisriikidesse ning vajavad enne investeeringu pälvimist <br>kindlustunnet.</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Block 5-->
+            <section class="section__five" data-aos="fade-up">
+                <div class="containe">
+                    <dis class="section__cont">
+                        <div class="sectionfive__rectangle">
+                            <h1 class="sectfive__title">Koolituste kalender</h1>
+                            <div class="blocks">
+                                <div class="bloc__date">
+                                    <img src="assets/images/rect4.png" class="rectangle__five">
+                                    <img src="assets/images/rect5.png" class="rectangle__tix">
+                                    <div class="date">
+                                        <div class="date__number">07</div>
+                                        <div class="date__text">juuni</div>
+                                    </div>
+                                    <details class="date__block">
+                                        <summary class="date__title"><span>Häkkimise põhitõdede töötuba</span></summary>
+                                        <div class="date__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad <br>minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis</div>
+                                        <a href="#" class="arrow">
+                                            <img class="arrow__img" src="assets/images/arrow.png">
+                                        </a>
+                                    </details>
+                                </div>
+                                <div class="bloc__date">
+                                    <div class="date">
+                                        <div class="date__number">25</div>
+                                        <div class="date__text">aug.</div>
+                                    </div>
+                                    <details class="date__block">
+                                        <summary class="date__title"><span>Õngitsuskool</span>itus organisatsioonidele</summary>
+                                        <div class="date__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad <br>minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis</div>
+                                        <a href="#" class="arrow">
+                                            <img class="arrow__img" src="assets/images/arrow.png">
+                                        </a>
+                                    </details>
+                                </div>
+                                <div class="bloc__date">
+                                    <div class="date">
+                                        <div class="date__number">22</div>
+                                        <div class="date__text">sept.</div>
+                                    </div>
+                                    <details class="date__block">
+                                        <summary class="date__title"><span>OSINT alused</span></summary>
+                                        <div class="date__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad <br>minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis</div>
+                                        <a href="#" class="arrow">
+                                            <img class="arrow__img" src="assets/images/arrow.png">
+                                        </a>
+                                    </details>
+                                </div>
+
+                                <div class="bloc__date">
+                                    <div class="date">
+                                        <div class="date__number">18</div>
+                                        <div class="date__text">okt.</div>
+                                    </div>
+                                    <details class="date__block">
+                                        <summary class="date__title"><span>Turvaline arendamine: häkkeritelt arendajatele</span></summary>
+                                        <div class="date__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad <br>minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis</div>
+                                        <a href="#" class="arrow">
+                                            <img class="arrow__img" src="assets/images/arrow.png">
+                                        </a>
+                                    </details>
+                                </div>
+
+                                <div class="bloc__date">
+                                    <div class="date">
+                                        <div class="date__number">29</div>
+                                        <div class="date__text">nov.</div>
+                                    </div>
+                                    <details class="date__block">
+                                        <summary class="date__title"><span>Veebirakenduste turvalisuse meistriklass</span></summary>
+                                        <div class="date__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad <br>minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis</div>
+                                        <a href="#" class="arrow">
+                                            <img class="arrow__img" src="assets/images/arrow.png">
+                                        </a>
+                                    </details>
+                                </div>
+
+                                <div class="bloc__date">
+                                    <div class="date">
+                                        <div class="date__number">29</div>
+                                        <div class="date__text">nov.</div>
+                                    </div>
+                                    <details class="date__block">
+                                        <summary class="date__title"><span>Phyton</span></summary>
+                                        <div class="date__subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh <br>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad <br>minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                                        <a href="#" class="arrow">
+                                            <img class="arrow__img" src="assets/images/arrow.png">
+                                        </a>
+                                    </div>
+                                    </details>
+                                </div>
+
+                            </div>
+                        </div>
+                    </dis>
+                </div>
+
+
+            <!--Block 6-->
+
+                <div class="container" data-aos="fade-up">
+                    <div class="section__content">
+                        <h1 class="section__title">Paketid</h1>
+                        <div class="section__subtitle">KPMG Cyber pakub mitmest küberturvalisuse teenusest koosnevaid pakettlahendusi, mis on vajaduspõhis<br>lahendada kompleksseid ärilisi väljakutseid. Paketid sobivad ettevõttele kui soovitakse tellida mit</div>
+                        <div class="cardTi">
+                            <div class="cardTi__item">
+                                <div class="cardTi__title">Küberturvalisuse<br>ohuanalüüs</div>
+                                <div class="cardTi__subtitle">Ohuanalüüs  on taktikaline ja tehniline <br>teenus, mis võimaldab ettevõttel saada <br>kiire ülevaade välistest ohtudest.</div>
+                                <div class="cardTi__number">7 päeva</div>
+                                <div class="cardTi__tabl">
+                                    Selleks teostatakse:
+                                    <ul>
+                                        <li>veebirakenduse läbistustest</li>
+                                        <li>avalikest allikatest kättesaadavate andmete anlüüs</li>
+                                        <li>tumeveebi tehingute monitooring</li>
+                                    </ul>
+                                </div>
+                                <div class="cardTi__text">Ohuanalüüs sobib esitlemiseks investoritele<br> raha tõstmisel või uutele turgudele laienemisel, <br>  kuid annab kindlustunnet ka ettevõttele<br>  juhtidele igapäevase töö planeerimisel.</div>
+                                <a href="#" class="cardTi__btn">Rohkem infot</a>
+                            </div>
+
+                            <div class="cardTi__item">
+                                <div class="cardTi__title">Küberturvalisuse<br>küpsusanalüüs</div>
+                                <div class="cardTi__subtitle">Küpsusanalüüs on oma loomult<br>strateegilist sisendit pakkuv teenus.</div>
+                                <div class="cardTi__number">7 päeva</div>
+                                <div class="cardTi__table">
+                                    Teenuse osutamise käigus teostatakse<br>küberturvalisuse küpsustaseme analüüs (CMA – <br>cybersecurity maturity analysis) üldtuntud <br>metoodikate (ISO/IEC 27000 seeria standardid, <br>CCS CSC, COBIT 5, ISKE) põhjal. <br><br>Täiendavalt viiakse läbi ka IT audit ja <br>riskianalüüs.
+                                </div>
+                                <div class="cardTi__text">Enim on teenusest kasu ettevõtetel, kes <br>soovivad läbi mõelda IT ja küberturvalisuse  <br>valdkonna investeeringuid.</div>
+                                <a href="#" class="cardTi__btn">Rohkem infot</a>
+                            </div>
+
+                            <div class="cardTi__item">
+                                <div class="cardTi__title">Küberturvalisuse<br>HR analüüs</div>
+                                <div class="cardTi__subtitle">HR analüüs keskendub küberturvalis- <br>use nõrgima lüli (inimressursi) het- <br>ketaseme kaardistamisele ja kompe-<br>tentside tõstmisele.</div>
+                                <div class="cardTi__number">7 päeva</div>
+                                <div class="cardTi__tabl">
+                                    Paketi koosseisu kuulub
+                                    <ul>
+                                        <li>Paketi koosseisu kuulub<br>ettevõtte soovidele ja spetsiiﬁkale </li>
+                                        <li>kampaania tulemustel põhinev<br>personalikoolitus. </li>
+
+                                    </ul>
+                                </div>
+                                <div class="cardTi__text">Teenus sobib ettevõtetele, kus on lühikese aja<br>jooksul olnud aktiivne värbamine. Või juhul kui <br>võtmetöötajate kvaliﬁkatsioon vajab<br>värskendamist.</div>
+                                <a href="#" class="cardTi__btn">Rohkem infot</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Block 7-->
+            <section class="section" data-aos="fade-up">
+                <div class="container">
+                    <div class="section__content">
+                        <h1 class="sectionsev__title">KPMG Küberturvalisuse meeskond</h1>
+                        <div class="section__sub">KPMG Cyber Eesti meeskond on 10+ liikmeline kõrgelt haritud oma ala tippspetsialistidest koosnev meeskond.<br>Lisaks Eesti meeskonna kogemusepagasile, toetub KPMG Cyber Eesti meeskond tihedas koostöös nii Soome, Hollandi, UK, Rumeenia kui ka teiste riikide küberarenduskeskuste ning laiemalt kõigi 200 000<br>KPMG profesionaali kogemustepagasile, kokku 154 erinevast riigist. Meeskonna liikmed on pikaajalise küberturvalisuse valdkonnas töötamise taustaga ja laialdase rahvusvahelise nõustamise kogemusega <br>spetsialistid, omades erineval hulgal rahvusvaheliselt tunnustatud sertiﬁkaate (GWAPT, OSWP, CPTE, , CEH, CCNA, CISA, CISM, CISSP, GCCC, GSEC, CEE, Security+).</div>
+                        <div class="section__photo">
+                            <img src="assets/images/team__photo.png" class="sect__photo">
+                            <img src="assets/images/rect7.png" class="rectangle__seven">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="sect__footer">Võta ühendust</div>
+            </section>
+
+
+            <!--Block 8-->
+            <section class="section__video" data-aos="fade-up">
+                <div class="container__video">
+                    <div class="section__convideo">
+                        <div class="video__content">
+                            <div class="video">
+
+                                <div class="youtube" id="KY80enAfuPs" ></div>
+
+                            </div>
+                            <div class="video__text">
+                                <img src="assets/images/video_img2.png" class="video__img">
+                                <h1 class="video__title">Lorem ipsum dolor<br>sit amet, consec-<br>tetuer adipiscing <br>elit, sed diam <br>nonummy nibh eu-<br>ismod </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Block 9-->
+            <section class="section__eght" data-aos="fade-up">
+                <div class="container__photo">
+                    <div class="section__content">
+                        <h1 class="section__title">Viimased uudised</h1>
+
+                        <div class="sect__inner">
+                            <img src="assets/images/rect.png" class="rectangle__eght">
+
+                        <div class="photoCard__item">
+                            <div class="photo__card">
+                                <img src="assets/images/photo.png" class="photo">
+                                    <div class="photoCard__content">
+                                    <div class="photoCard__title">Lorem Ipsum</div>
+                                    <div class="photoCard__text">It is a long established fact that a reader will<br>be distracted by the readable content of a <br>page when looking at its layout. It is a long <br>established fact that a reader will be <br>distracted by the readable content of a page <br>when looking at its layout.</div>
+                                    <a href="#" class="arrow__photo">
+                                        <img class="arrow__imges" src="assets/images/arrow.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="photo__card">
+                                <img src="assets/images/photo.png" class="photo">
+                                    <div class="photoCard__content">
+                                    <div class="photoCard__title">Lorem Ipsum</div>
+                                    <div class="photoCard__text">It is a long established fact that a reader will<br>be distracted by the readable content of a <br>page when looking at its layout. It is a long <br>established fact that a reader will be <br>distracted by the readable content of a page <br>when looking at its layout.</div>
+                                    <a href="#" class="arrow__photo">
+                                        <img class="arrow__imges" src="assets/images/arrow.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="photo__card">
+                                <img src="assets/images/photo.png" class="photo">
+                                    <div class="photoCard__content">
+                                    <div class="photoCard__title">Lorem Ipsum</div>
+                                    <div class="photoCard__text">It is a long established fact that a reader will<br>be distracted by the readable content of a <br>page when looking at its layout. It is a long <br>established fact that a reader will be <br>distracted by the readable content of a page <br>when looking at its layout.</div>
+                                    <a href="#" class="arrow__photo">
+                                        <img class="arrow__imges" src="assets/images/arrow.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Block 10-->
+            <section class="section__form">
+                <div class="container">
+                    <div class="form__elements">
+                    <div class="form__item">
+                        <form action="send-mail-contact.php" method="post" class="feedback-form">
+                            <input type="hidden" name="gt" value="<?php echo $gt; ?>" />
+                            <h1 class="form__title">Võtke meiega ühendust !</h1>
+                            <input class="form__input" type = "text" placeholder = "NIMI" name="Feedbackname">
+                            <input class="form__input" type = "email" placeholder = "E-MAIL" name="Feedbackemail">
+                            <textarea id="text" class="form__text" type = "text" name="Feedbackmessage" placeholder = "SÕNUM"></textarea>
+                            <!--re-capcha-->
+                            <div class="g-recaptcha" data-sitekey="6Le5LZMUAAAAAOA6gWWEdFbEY9PsSg5ad3nwMGP0" data-theme="dark"></div>
+                            <div class="form__btn">
+                                <input class="btn__search" type="submit" value="SAADA"/>
+                                    <div class="btn__logo">
+                                     <i class="far fa-paper-plane"></i>
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form__info">
+
+                            <img class="info__avatar" src="assets/images/avatar.png">
+                            <div class="formItem__text">
+                            <div class="info__name">Mihkel Kukk</div>
+                            <div class="info__work">Küberturvalisuse teenuste juht</div>
+                            <div class="info__email">E:<a href="#" class="form__ref"> mihkelkukk@kpmg.com</a></div>
+
+                            <div class="info__name">KPMG Baltics OÜ</div>
+                            <div class="info__work">Narva mnt 5, Tallinn 10117, Estonia</div>
+                            <div class="info__number">Tel: +372 626 8700</div>
+
+                            <div class="form__email">E-mail<br><a href="#"class="form__ref">cyber@kpmg.ee</a></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!--footer-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__item">
+                        <div class="footer__text">@ 2018 KPMG BALTICS OÜ, EESTI OSAÜHING JA ŠVEITSI ÜHINGUGA KPMG INTERNATIONAL COOPERATIVE ("KPMG INTERNATIONAL") LEPINGULISELT<br>SEOTUD SÕLTUMATUTE ETTEVÕTJATE VÕRGUSTIKU LIIGE. KÕIK ÕIGUSED KAITSTUD.</div>
+                        <div class="footer__social">
+                            <a href="#" class="social__link">
+                                <i class="fab fa-invision"></i>
+                            </a>
+                            <a href="#" class="social__link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social__link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+
+            <!--script for video-->
+            <script>
+                'use strict';
+            function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
+            r(function(){
+                if (!document.getElementsByClassName) {
+
+                    var getElementsByClassName = function(node, classname) {
+                        var a = [];
+                        var re = new RegExp('(^| )'+classname+'( |$)');
+                        var els = node.getElementsByTagName("*");
+                        for(var i=0,j=els.length; i < j; i++)
+                            if(re.test(els[i].className))a.push(els[i]);
+                        return a;
+                    }
+                    var videos = getElementsByClassName(document.body,"youtube");
+                } else {
+                    var videos = document.getElementsByClassName("youtube");
+                }
+                var nb_videos = videos.length;
+                for (var i=0; i < nb_videos; i++) {
+
+                    videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].id + '/sddefault.jpg)';
+
+                    var play = document.createElement("div");
+                    play.setAttribute("class","play");
+                    videos[i].appendChild(play);
+                    videos[i].onclick = function() {
+
+                        var iframe = document.createElement("iframe");
+                        var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
+                        if (this.getAttribute("data-params")) iframe_url+='&'+this.getAttribute("data-params");
+                        iframe.setAttribute("src",iframe_url);
+                        iframe.setAttribute("frameborder",'0');
+
+                        iframe.style.width  = this.style.width;
+                        iframe.style.height = this.style.height;
+
+                        this.parentNode.replaceChild(iframe, this);
+                    }
+                }
+            });
+            </script>
+
+<script src="assets/js/app.js"></script>
+<script>
+AOS.init();
+</script>
+<script>
+jQuery(document).ready(function($){
+    //move nav element position according to window width
+    moveNavigation();
+    $(window).on('resize', function(){
+        (!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
+    });
+
+    //mobile version - open/close navigation
+    $('.cd-nav-trigger').on('click', function(event){
+        event.preventDefault();
+        if($('header').hasClass('nav-is-visible')) $('.moves-out').removeClass('moves-out');
+
+        $('header').toggleClass('nav-is-visible');
+        $('.cd-main-nav').toggleClass('nav-is-visible');
+        $('.cd-main-content').toggleClass('nav-is-visible');
+    });
+
+    //mobile version - go back to main navigation
+    $('.go-back').on('click', function(event){
+        event.preventDefault();
+        $('.cd-main-nav').removeClass('moves-out');
+    });
+
+    //open sub-navigation
+    $('.cd-subnav-trigger').on('click', function(event){
+        event.preventDefault();
+        $('.cd-main-nav').toggleClass('moves-out');
+    });
+
+    function moveNavigation(){
+        var navigation = $('.cd-main-nav-wrapper');
+          var screenSize = checkWindowWidth();
+        if ( screenSize ) {
+            //desktop screen - insert navigation inside header element
+            navigation.detach();
+            navigation.insertBefore('.cd-nav-trigger');
+        } else {
+            //mobile screen - insert navigation after .cd-main-content element
+            navigation.detach();
+            navigation.insertAfter('.cd-main-content');
+        }
+    }
+
+    function checkWindowWidth() {
+        var mq = window.getComputedStyle(document.querySelector('header'), '::before').getPropertyValue('content').replace(/"/g, '');
+        return ( mq == 'mobile' ) ? false : true;
+    }
+});
+</script>
+<script>
+    $(window).scroll(function() {
+    if ($(document).scrollTop() > 100) {
+        $(".header").addClass("animate");
+            } else {
+        $(".header").removeClass("animate");
+    }
+});
+
+</script>
+<style>
+
+.video-wrapper {
+position: absolute;
+height: 100vh;
+width: 100%;
+overflow: hidden;
+
+}
+
+video {
+width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+.video-wrapper {
+    display: none;
+}
+}
+
+</style>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
